@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  height: 90%;
+  flex: 1;
+}
+
+.logout-button {
+  align-self: flex-end;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-list {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-list input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chat-list button {
+  width: 100%;
+  padding: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-list ul {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chat-list li.selected {
+  background-color: #e0e0e0;
+}
+
+.chat {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.me {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.message.them {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.chat input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chat button {
+  width: 100%;
+  padding: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-screen input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-screen button {
+  width: 320px;
+  padding: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
